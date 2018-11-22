@@ -1,0 +1,9 @@
+const Player = () => {
+  return (
+    <div className="player">
+      <span className="player-name">
+        Guil
+      </span>
+    </div>
+  );
+}
