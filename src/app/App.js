@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
-import Header from '../Components/Header/Header';
-import Player from '../Components/Player/Player';
+//import Header from '../Components/Header/Header';
+//import Player from '../Components/Player/Player';
 
 
 
-class App extends Component {
+class App extends React.Component {
   render () {
-    <Header />,
-    <Player />
+    //<Header />,
+    //<Player />
 
     return (
       <div className="scoreboard">
-      <Header />
-      <Player />
       </div>
 
     );
