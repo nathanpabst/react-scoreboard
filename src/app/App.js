@@ -1,15 +1,11 @@
 import React from 'react';
 import './App.css';
 
-//import Header from '../Components/Header/Header';
-//import Player from '../Components/Player/Player';
-
-
+import Header from '../Components/Header/Header';
 
 class App extends React.Component {
   render () {
-    //<Header />,
-    //<Player />
+    <Header />
 
     return (
       <div className="scoreboard">
