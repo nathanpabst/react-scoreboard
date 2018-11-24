@@ -5,8 +5,8 @@ class Header extends React.Component {
   render () {
     return (
       <header>
-        <h1>Scoreboard</h1>
-        <span className="stats">Players: 1</span>
+        <h1>{this.props.title}</h1>
+        <span className="stats">Players: {this.props.totalPlayers}</span>
       </header>
     );
   }

@@ -8,7 +8,7 @@ class App extends React.Component {
   render () {
     return (
       <div className="scoreboard">
-        <Header />
+        <Header title="Scoreboard" totalPlayers = {1} />
         <Player />
       </div>
     );
