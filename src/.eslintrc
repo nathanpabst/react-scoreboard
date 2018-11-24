@@ -1,5 +1,5 @@
 {
-  "extends": "react-app",
+  "extends": ["plugin:react-app/recommended"],
   "env": {
     "es6": true,
     "node": true,
@@ -10,6 +10,7 @@
     "firebase": true
   },
   "rules": {
+    "jsx-a11y/href-no-hash": [0],
     "arrow-spacing": ["error", { "before": true, "after": true }],
     "block-spacing": ["error", "always"],
     "camelcase": ["error", { "properties": "always" }],
