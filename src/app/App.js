@@ -5,14 +5,10 @@ import Header from '../Components/Header/Header';
 
 class App extends React.Component {
   render () {
-    <Header />
-
     return (
-      <div className="scoreboard">
-      </div>
-
+      <Header />
     );
-  }
+  };
 }
 
 export default App;
