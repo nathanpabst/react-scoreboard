@@ -7,8 +7,10 @@ import './App.css';
 class App extends React.Component {
   render () {
     return (
-      <Header />,
-      <Player />
+      <div className="scoreboard">
+        <Header />
+        <Player />
+      </div>
     );
   };
 }
