@@ -1,23 +1,21 @@
-/* import React from 'react';
+import React from 'react';
 import './Player.css';
 
 class Player extends React.Component {
-  state = {
-    games: [],
-
-  };
   render () {
-    const {games} = this.state;
+    return (
+      <div className="player">
+        <span className="player-name">
+          Guil
+        </span>
+        <div className="counter">
+          <button className="counter-action decrement"> - </button>
+          <span className="counter-score">35</span>
+          <button className="counter-action increment"> + </button>
+        </div>
+      </div>
+    );
   };
-
-  return (
-    <div className="player">
-      <span className="player-name">
-        Guil
-      </span>
-      <Counter />
-    </div>
-  );
 }
 
-export default Player; */
+export default Player;
