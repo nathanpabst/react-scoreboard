@@ -7,9 +7,11 @@ class Player extends React.Component {
     return (
       <div className="player">
         <span className="player-name">
-          Guil
+          {this.props.name}
         </span>
-        <Counter />
+        <Counter
+          score={this.props.score}
+        />
       </div>
     );
   };
