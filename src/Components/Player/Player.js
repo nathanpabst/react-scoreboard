@@ -3,6 +3,7 @@ import './Player.css';
 import Counter from '../Counter/Counter';
 
 class Player extends React.Component {
+
   render () {
     return (
       <div className="player">

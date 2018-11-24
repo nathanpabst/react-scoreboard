@@ -4,6 +4,25 @@ import Player from '../Components/Player/Player';
 
 import './App.css';
 
+const players = [
+  {
+    name: "Guil",
+    score: 50
+  },
+  {
+    name: "Ann",
+    score: 35
+  },
+  {
+    name: "Pollo el Diablo",
+    score: 35
+  },
+  {
+    name: "Dragon",
+    score: 35
+  }
+];
+
 class App extends React.Component {
   render () {
     return (
@@ -12,10 +31,13 @@ class App extends React.Component {
           title="Scoreboard"
           totalPlayers = {1}
         />
-        <Player name="Guil" score={50} />
-        <Player name="Pollo el Diablo" score={35} />
-        <Player name="Ann" score={35} />
-        <Player name="Dragon" score={35} />
+        <Player initialPlayers={players} />
+
+        <Player
+          name={players.name}
+          score={players.score}
+        />
+
 
       </div>
     );
