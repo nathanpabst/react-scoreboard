@@ -10,7 +10,7 @@ class Player extends React.Component {
           {this.props.name}
         </span>
         <Counter
-          score={50}
+          score={this.props.score}
         />
       </div>
     );
