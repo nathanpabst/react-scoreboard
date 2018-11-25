@@ -10,12 +10,13 @@ class App extends React.Component {
       <div className="scoreboard">
         <Header
           title="Scoreboard"
-          totalPlayers = {1}
+          totalPlayers = {4}
         />
+
         <Player name="Guil" score={50} />
-        <Player name="Pollo el Diablo" score={35} />
-        <Player name="Ann" score={35} />
-        <Player name="Dragon" score={35} />
+        <Player name="Ann" score={42} />
+        <Player name="Pollo el Diablo" score={42} />
+        <Player name="Dragon" score={42} />
 
       </div>
     );
