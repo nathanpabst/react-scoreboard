@@ -9,6 +9,7 @@ class Player extends React.Component {
     return (
       <div className="player">
         <span className="player-name">
+          <button className="remove-player" onClick={ () => this.props.removePlayer(this.props.id)}>✖</button>
           {this.props.name}
         </span>
         <Counter />
