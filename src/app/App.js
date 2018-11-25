@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Components/Header/Header';
 import Player from '../Components/Player/Player';
-
+import AddPlayerForm from '../Components/AddPlayerForm/AddPlayerForm';
 import './App.css';
 
 class App extends React.Component {
@@ -67,6 +67,7 @@ class App extends React.Component {
         />
       )}
 
+        <AddPlayerForm />
       </div>
     );
   };
