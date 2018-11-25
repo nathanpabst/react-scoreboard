@@ -5,18 +5,54 @@ import Player from '../Components/Player/Player';
 import './App.css';
 
 class App extends React.Component {
+
+  state = {
+    players: [
+      {
+        name: "Guil",
+        id: 1
+      },
+      {
+        name: "Ann",
+        id: 2
+      },
+      {
+        name: "Pollo el Diablo",
+        id: 3
+      },
+      {
+        name: "Dragon",
+        id: 4
+      }
+    ]
+  };
+
+  handleRemovePlayer = (id) => {
+    this.setState( prevState => {
+      return {
+        players: prevState.players.filter( p => p.id !== id)
+      };
+    });
+  }
+
   render () {
     return (
       <div className="scoreboard">
         <Header
           title="Scoreboard"
-          totalPlayers = {4}
+          totalPlayers = {this.state.players.length}
         />
 
-        <Player name="Guil" score={50} />
-        <Player name="Ann" score={42} />
-        <Player name="Pollo el Diablo" score={42} />
-        <Player name="Dragon" score={42} />
+      {/*PLAYERS LIST*/}
+      {this.state.players.map( player =>
+        <Player
+          name={player.name}
+          id={player.id}
+          key={player.id.toString()}
+          removePlayer={this.handleRemovePlayer}
+        />
+      )}
+
 
       </div>
     );
