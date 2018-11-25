@@ -2,6 +2,7 @@ import React from 'react';
 import './Player.css';
 import Counter from '../Counter/Counter';
 
+
 class Player extends React.Component {
 
   render () {
@@ -10,9 +11,7 @@ class Player extends React.Component {
         <span className="player-name">
           {this.props.name}
         </span>
-        <Counter
-          score={this.props.score}
-        />
+        <Counter />
       </div>
     );
   };
