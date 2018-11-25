@@ -2,7 +2,6 @@ import React from 'react';
 import './Player.css';
 import Counter from '../Counter/Counter';
 
-
 class Player extends React.Component {
 
   render () {
@@ -12,7 +11,11 @@ class Player extends React.Component {
           <button className="remove-player" onClick={ () => this.props.removePlayer(this.props.id)}>✖</button>
           {this.props.name}
         </span>
-        <Counter />
+        <Counter
+          score={this.props.score}
+          index={this.props.index}
+          changeScore={this.props.changeScore}
+        />
       </div>
     );
   };
