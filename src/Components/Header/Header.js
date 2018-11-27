@@ -21,6 +21,10 @@ Header.propTypes = {
   players: PropTypes.arrayOf(PropTypes.object)
 };
 
+Header.defaultProps = {
+  title: 'Scoreboard'
+};
+
 // STATELESS CLASS..SEE REFACTOR ABOVE
 // class Header extends React.Component {
 //   render () {
