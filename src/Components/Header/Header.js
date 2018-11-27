@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Stats from '../Stats/Stats';
 import Stopwatch from '../Stopwatch/Stopwatch';
 
@@ -14,6 +15,16 @@ const Header = ({ players, title }) => {
       </header>
   );
 }
+
+Header.propTypes = {
+  title: PropTypes.string,
+  players: PropTypes.arrayOf(PropTypes.object)
+};
+
+Header.defaultProps = {
+  title: 'Scoreboard'
+};
+
 // STATELESS CLASS..SEE REFACTOR ABOVE
 // class Header extends React.Component {
 //   render () {
